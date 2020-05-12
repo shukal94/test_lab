@@ -14,9 +14,10 @@ public class Formatter {
         input = OperatorUtil.normalizeMultiply(input);
         input = OperatorUtil.normalizeDivide(input);
         input = OperatorUtil.normalizeEq(input);
+        input = StatementUtil.normalizeSemicolons(input);
         input = SpaceUtil.normalizeSpaces(input);
         input = TabUtil.normalizeTabs(input);
-        input = StatementUtil.normalizeSemicolons(input);
+
         System.out.println(input);
 
     }
